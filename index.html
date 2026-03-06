@@ -2,93 +2,132 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>강치타 스트리밍 페이지</title>
+<title>강치타 스트리밍</title>
 
 <style>
+
 body{
-    margin:0;
-    font-family:sans-serif;
-    background:#0f0f14;
-    color:white;
-    text-align:center;
+margin:0;
+font-family:sans-serif;
+background:#0f0f17;
+color:white;
+text-align:center;
 }
 
-.header{
-    padding:60px 20px;
+.banner{
+width:100%;
+height:220px;
+object-fit:cover;
 }
 
-.profile-img{
-    width:140px;
-    border-radius:50%;
-    border:4px solid #7c5cff;
+.profile{
+margin-top:-70px;
+}
+
+.profile img{
+width:140px;
+border-radius:50%;
+border:5px solid #0f0f17;
 }
 
 .name{
-    font-size:36px;
-    margin-top:20px;
+font-size:34px;
+margin-top:10px;
 }
 
 .desc{
-    color:#aaa;
-    margin-top:10px;
+color:#aaa;
+margin-bottom:20px;
 }
 
 .stats{
-    margin-top:30px;
-    font-size:18px;
+display:flex;
+justify-content:center;
+gap:40px;
+margin-bottom:30px;
 }
 
-.links{
-    margin-top:40px;
+.stat{
+font-size:18px;
 }
 
-.button{
-    display:block;
-    width:220px;
-    margin:10px auto;
-    padding:14px;
-    background:#7c5cff;
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
-    transition:0.2s;
+.buttons{
+max-width:300px;
+margin:auto;
 }
 
-.button:hover{
-    background:#9a82ff;
+.btn{
+display:block;
+background:#7b5cff;
+padding:14px;
+margin:10px;
+border-radius:10px;
+text-decoration:none;
+color:white;
+font-weight:bold;
 }
+
+.btn:hover{
+background:#9279ff;
+}
+
+.section{
+margin-top:50px;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="header">
+<img class="banner" src="banner.jpg">
 
-<img class="profile-img" src="profile.png">
+<div class="profile">
+<img src="profile.png">
+</div>
 
 <div class="name">강치타</div>
-
-<div class="desc">
-치지직 스트리머 🎮  
-평일 밤 9시 ~ 새벽 3시 방송
-</div>
+<div class="desc">치지직 스트리머 🎮</div>
 
 <div class="stats">
-👥 평균 시청자 : 7,900명<br>
-❤️ 팔로워 : 90,000
+
+<div class="stat">
+👥 평균 시청자<br>
+<b>7,500</b>
 </div>
 
-<div class="links">
+<div class="stat">
+❤️ 팔로워<br>
+<b>86,500</b>
+</div>
 
-<a class="button" href="#">치지직 방송 바로가기</a>
-
-<a class="button" href="#">유튜브</a>
-
-<a class="button" href="#">디스코드</a>
-
-<a class="button" href="#">후원하기</a>
+<div class="stat">
+🕘 방송시간<br>
+<b>21:00 ~ 03:00</b>
+</div>
 
 </div>
+
+<div class="buttons">
+
+<a class="btn" href="#">치지직 방송</a>
+
+<a class="btn" href="#">유튜브</a>
+
+<a class="btn" href="#">디스코드</a>
+
+<a class="btn" href="#">후원하기</a>
+
+</div>
+
+<div class="section">
+
+<h2>소개</h2>
+
+<p>
+평일 밤 9시부터 새벽 3시까지 방송하는 강치타입니다.<br>
+게임 / 소통 / 다양한 콘텐츠 방송합니다.
+</p>
 
 </div>
 
