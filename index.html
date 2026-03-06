@@ -180,17 +180,23 @@
         .user-name { color: #9147ff; font-weight: bold; }
 
         /* 5. 다시보기 섹션 */
-        .past-lives-title { margin-top: 50px; font-size: 20px; font-weight: 700; color: #efeff1; }
+        .past-lives-title { margin-top: 50px; font-size: 20px; font-weight: 800; color: #efeff1; }
         .video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
+        
         .video-card {
             background: #18181b; border-radius: 12px; overflow: hidden;
             transition: 0.3s; border: 1px solid rgba(255,255,255,0.05);
         }
         .video-card:hover { transform: translateY(-5px); border-color: #9147ff; }
-        .thumb-wrapper { position: relative; aspect-ratio: 16/9; }
-        .thumb-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+        
+        /* 4.webp 이미지 사이즈에 맞춰 자동 조절 */
+        .thumb-wrapper { position: relative; width: 100%; }
+        .thumb-wrapper img { 
+            width: 100%; height: auto; display: block; object-fit: cover; 
+        }
+        
         .duration { position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.8); padding: 2px 6px; border-radius: 4px; font-size: 12px; }
-        .video-info { padding: 15px; font-weight: 600; font-size: 14px; }
+        .video-info { padding: 15px; font-weight: 600; font-size: 14px; background: #18181b; }
 
     </style>
 </head>
@@ -259,21 +265,21 @@
         <div class="video-grid">
             <div class="video-card">
                 <div class="thumb-wrapper">
-                    <img src="https://github.com/MI1268/gangchita/blob/main/%EB%9D%BC%EC%9D%B4%EB%B8%8C.png?raw=true" alt="영상1">
+                    <img src="https://github.com/MI1268/1/blob/main/1.webp?raw=true" alt="영상1">
                     <span class="duration">03:22:15</span>
                 </div>
                 <div class="video-info">통제불가 소통 방송 #1</div>
             </div>
             <div class="video-card">
                 <div class="thumb-wrapper">
-                    <img src="https://github.com/MI1268/gangchita/blob/main/%EB%9D%BC%EC%9D%B4%EB%B8%8C.png?raw=true" alt="영상2">
+                    <img src="https://github.com/MI1268/1/blob/main/42.webp?raw=true" alt="영상2">
                     <span class="duration">02:45:10</span>
                 </div>
                 <div class="video-info">매니저랑 싸움 오늘 달려(술먹X)</div>
             </div>
             <div class="video-card">
                 <div class="thumb-wrapper">
-                    <img src="https://github.com/MI1268/gangchita/blob/main/%EB%9D%BC%EC%9D%B4%EB%B8%8C.png?raw=true" alt="영상3">
+                    <img src="https://github.com/MI1268/1/blob/main/55.webp?raw=true" alt="영상3">
                     <span class="duration">04:10:05</span>
                 </div>
                 <div class="video-info">치타는 참지 않긔 오늘은 물소리ASMR 터져따..</div>
